@@ -5,11 +5,32 @@
 box-sizing: border-box
 }
 
-.imglogo {
-    border-radius: 50%;
-    background-color: #808080;
+/*img*/
+header {
+    display: flex;
 }
 
-li:hover{
-    text-decoration: underline;
+.imglog img {
+    border-radius: 50%;
+    background-color: lightgrey;
 }
+
+.top img {
+    width: 100%;
+}
+
+/*nav*/
+#navi ul {
+    list-style-type: none;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navi ul li {
+    display: block;
+    padding: 5px 20px;
+}
+
+
+/*section*/
