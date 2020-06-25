@@ -5,32 +5,121 @@
 box-sizing: border-box
 }
 
-/*img*/
-header {
+/*header*/
+.header {
     display: flex;
+    height:100px;
+    position: relative;
 }
-
-.imglog img {
-    border-radius: 50%;
-    background-color: lightgrey;
-}
-
-.top img {
-    width: 100%;
-}
-
-/*nav*/
-#navi ul {
+.navi ul {
     list-style-type: none;
     text-decoration: underline;
-    margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: auto;
+    height:50px;
+    position: relative; top: 0; right: 370px;
 }
-#navi ul li {
+.navi ul li {
     display: block;
     padding: 5px 20px;
+    color: black;
+}
+.logo {
+    margin-top: 10px;
+    margin-left: 300px;
+    border-radius: 50%;
+    background-color: #eeeeee;
 }
 
+/*main*/
+.top {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+div {
+    display: inline-block;
+    text-align: left;
+    line-height: 0.5em;
+    padding: 0 335px;
+}
+.list {
+    border: 0;
+    border-bottom: 1px lightgray;
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    background-color: #eeeeee;
+    margin: 50px auto 150px;
+}
+th {
+    width: 100px;
+    height: 50px;
+}
+th,td {
+    padding: 5px;
+}
+th:nth-child(2) {
+    width: 35%;
+}
+td:nth-child(1) {
+    color: gray;
+}
+.first {
+    color: orange;
+}
 
-/*section*/
+/*form main*/
+form {
+    text-align: center;
+    border: solid 0px;
+    border:none;
+    background:none;
+    -webkit-appearance:none;
+}
+input{
+    background-color: #eeeeee;
+    border: none;
+}
+textarea{
+    background-color: #eeeeee;
+    border:none;
+}
+::placeholder {
+    font-size: 2em;
+}
+input[type="email"] {
+    width: 50em;
+    height: 50px;
+    margin: 10px 0 10px 0;
+}
+textarea {
+    width: 51.5em;
+    height: 34em;
+    font-size: 1em;
+    padding: 10px;
+}
+p.submit {
+    display: flex;
+    position: relative; top: 0; left: 300px;
+    display: inline-block;
+}
+input[type="submit"] {
+    font-size: 16pt;
+    cursor: pointer;
+    padding: 10px 35px;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1em;
+}
+/*footer*/
+.last {
+    text-align: center;
+    background-color: black;
+    color: white;
+}

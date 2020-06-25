@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <a href="index.html"><img id="imglogo" src="img/logo.png" width="100px"></a>
-    <nav id="navi">
-        <ul>
-            <a href="index.html"><li>nav-ul-li</li></a>
-            <li>paragraph</li>
-            <li>table</li>
-            <a href="form.html"><li>form</li></a>
-        </ul>
-    </nav>
 </head>
 <body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="ロゴ" width="150px" height="150px"></a>
+        <nav class="navi">
+            <ul>
+                <a href="index.html"><li>nav-ul-li</li></a>
+                <a href="#paragraph"><li>paragraph</li></a>
+                <a href="#table"><li>table</li></a>
+                <a href="form.html"><li>form</li></a>
+            </ul>
+        </nav>
+    </header>
+<main>
     <h1>form</h1>
     <form action="" method="POST">
         <dd>
-            <input type="email" name="email" required placeholder="E-mail">
+            <input class="email" type="email" name="email" required placeholder="E-mail">
         </dd>
-        <form action="" method="POST">
+        <dd>
             <textarea name="comment" cols="40" rows="10" required placeholder="内容"></textarea>
-        </form>
+        </dd>
             <p class="submit"><input type="submit" name="submit" value="送信"></p>
     </form>
+</main>
 </body>
 <footer>
-    <p><small>&copy; 2020 last_alice</small></p>
+    <p class="last"><small>&copy; 2020 last_alice</small></p>
 </footer>
 </html>
